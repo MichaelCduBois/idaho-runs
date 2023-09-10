@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Goose Creek Run-Off",
+    "location": {
+      "city": "Oakley",
+      "state": "ID"
+    },
+    "distances": ["5k", "10k"],
+    "date": "2023/07/23",
+    "website": "https://goosecreekrunoff.com/",
+    "registrationLink": "https://www.raceentry.com/races/oakley-goose-creek-run-off/2023/register"
+  },
+  {
+    "name": "Rim2Rim",
+    "location": {
+      "city": "Jerome",
+      "state": "ID"
+    },
+    "distances": ["7.5mi", "3.25mi"],
+    "date": "2023/09/09",
+    "website": "https://habitatmagicvalley.org/events/rim2rim/",
+    "registrationLink": ""
+  },
+  {
+    "name": "Mini-Cassia Turkey Trot",
+    "location": {
+      "city": "Paul",
+      "state": "ID"
+    },
+    "distances": ["5k"],
+    "date": "2023/11/23",
+    "website": "https://minicassiaturkeytrot.com/",
+    "registrationLink": "https://minicassiaturkeytrot.com/registration/"
+  }
+]
