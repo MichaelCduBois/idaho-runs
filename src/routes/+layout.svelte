@@ -8,10 +8,14 @@
 
   // App Shell
   import { AppShell } from "@skeletonlabs/skeleton";
+
+  // Idaho Runs Imports
+  import Footer from "$lib/components/footer.svelte";
+  import Header from "$lib/components/header.svelte";
 </script>
 
 <AppShell>
-  <!-- <svelte:fragment slot="header">Header</svelte:fragment> -->
+  <Header slot="header" />
   <slot />
-  <!-- <svelte:fragment slot="footer">Footer</svelte:fragment> -->
+  <Footer slot="footer" />
 </AppShell>
