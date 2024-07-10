@@ -14,7 +14,7 @@
     <div class="flex flex-col min-h-screen bg-muted/40">
       <header class="bg-background border-b px-4 py-3 sm:px-6 flex items-center justify-between">
         <img class="size-20" src="Idaho Runs.webp" alt="Idaho Runs Logo">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-1 sm:gap-4">
           <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 rounded-md px-4" data-tally-open="mO00LY" data-tally-layout="modal" data-tally-auto-close="1000">
             <span class="material-symbols-rounded">calendar_add_on</span>
             <p class="pl-1">Add Missing Event</p>
@@ -22,7 +22,7 @@
           </button>
           <button disabled class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 rounded-md px-4">
             <span class="material-symbols-rounded">filter_alt</span>
-            <p class="pl-1">Filter Events</p>
+            <p class="hidden sm:block pl-1">Filter Events</p>
             <span class="sr-only">Filter Events</span>
           </button>
         </div>
@@ -30,8 +30,8 @@
       <main hx-get="events.json" hx-trigger="revealed" hx-target="#event-list" class="flex-1 p-4 sm:p-6 grid gap-6">
         <div id="event-list"></div>
         <template id="event-template">
-          <div class="m-2 rounded-lg border bg-card text-card-foreground shadow-sm">
-            <div class="flex flex-col space-y-1.5 p-6">
+          <div class="m-2 mb-3 rounded-lg border bg-card text-card-foreground shadow-sm">
+            <div class="flex flex-col space-y-1.5 p-4 px-6">
               <h3 id="event-name" class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"></h3>
               <p class="text-sm text-muted-foreground">
                 <div class="flex items-center gap-2">

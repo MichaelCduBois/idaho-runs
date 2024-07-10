@@ -1,15 +1,45 @@
 [
 	{
-		"name": "Firecracker",
-		"location": "Rupert",
-		"date": "07-02-2024",
-		"website": "https://www.raceentry.com/firecracker-5k10k-run-40k-bike/race-information"
+		"name": "Declo Days Hammer Run",
+		"location": "Declo",
+		"date": "07-13-2024",
+		"website": "https://www.raceentry.com/declo-days-hammer-run/race-information"
+	},
+	{
+		"name": "Beaverhead Endurance Runs",
+		"location": "Salmon",
+		"date": "07-13-2024",
+		"website": "https://beaverheadrun.com/"
+	},
+	{
+		"name": "Good Neighbor Fun Day Run",
+		"location": "Kimberly",
+		"date": "07-13-2024",
+		"website": "https://store.kimberly.edu/good-neighbor-day-fun-run"
+	},
+	{
+		"name": "Indian Creek Wine Run",
+		"location": "Kuna",
+		"date": "07-13-2024",
+		"website": "https://runsignup.com/Race/ID/Kuna/IndianCreekWineRun5k"
+	},
+	{
+		"name": "Lindsay Wine Run",
+		"location": "Lewiston",
+		"date": "07-14-2024",
+		"website": "https://runsignup.com/Race/ID/Lewiston/LindsayCreekWineRun5k"
 	},
 	{
 		"name": "Goose Creek Run Off",
 		"location": "Oakley",
 		"date": "07-20-2024",
 		"website": "https://goosecreekrunoff.com/"
+	},
+	{
+		"name": "Mesa Falls Marathon",
+		"location": "Ashton",
+		"date": "07-20-2024",
+		"website": "https://mesafallsmarathon.com/"
 	},
 	{
 		"name": "Rim2Rim Race4Homes",
@@ -22,5 +52,11 @@
 		"location": "Paul",
 		"date": "11-28-2024",
 		"website": "https://minicassiaturkeytrot.com/"
+	},
+	{
+		"name": "Firecracker",
+		"location": "Rupert",
+		"date": "TDB",
+		"website": "https://www.raceentry.com/firecracker-5k10k-run-40k-bike/race-information"
 	}
 ]
