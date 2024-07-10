@@ -13,19 +13,14 @@
   <body>
     <div class="flex flex-col min-h-screen bg-muted/40">
       <header class="bg-background border-b px-4 py-3 sm:px-6 flex items-center justify-between">
-        <h1 class="text-xl font-semibold">Idaho Runs</h1>
+        <img class="size-20" src="Idaho Runs.webp" alt="Idaho Runs Logo">
         <div class="flex items-center gap-4">
-          <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3" data-tally-open="mO00LY" data-tally-layout="modal" data-tally-auto-close="1000">
+          <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 rounded-md px-4" data-tally-open="mO00LY" data-tally-layout="modal" data-tally-auto-close="1000">
             <span class="material-symbols-rounded">calendar_add_on</span>
             <p class="pl-1">Add Missing Event</p>
             <span class="sr-only">Add Event</span>
           </button>
-          <!-- <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"> -->
-          <!--   <span class="material-symbols-rounded">calendar_month</span> -->
-          <!--   <p class="pl-1">Add Missing Event</p> -->
-          <!--   <span class="sr-only">View Calendar</span> -->
-          <!-- </button> -->
-          <button disabled class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+          <button disabled class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 rounded-md px-4">
             <span class="material-symbols-rounded">filter_alt</span>
             <p class="pl-1">Filter Events</p>
             <span class="sr-only">Filter Events</span>
@@ -47,6 +42,10 @@
                   <span class="material-symbols-rounded">location_on</span>
                   <span id="event-location"></span>
                 </div>
+                <a class="max-w-fit group relative inline-flex items-center overflow-hidden rounded bg-[#03557E] px-8 py-3 text-white focus:outline-none focus:ring active:bg-[#108997]" href="" id="event-website" target="_blank" ref="nofollow noreferrer noopener">
+                  <span class="absolute -start-full transition-all group-hover:start-4 material-symbols-rounded">public</span>
+                  <span class="text-sm font-medium transition-all group-hover:ms-4"> Event Website </span>
+                </a>
               </p>
             </div>
           </div>
@@ -69,6 +68,7 @@
           clone.querySelector("#event-name").textContent = event.name
           clone.querySelector("#event-date").textContent = event.date
           clone.querySelector("#event-location").textContent = event.location
+          clone.querySelector("#event-website").setAttribute("href", event.website)
           container.appendChild(clone)
         })
       }
